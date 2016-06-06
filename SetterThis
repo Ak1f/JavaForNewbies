@@ -1,0 +1,47 @@
+
+public class SetThisM {
+    private String name;
+    private int age;
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    public void setInfo(String name, int age) {
+        setName(name);
+        setAge(age);
+    }
+}
+
+
+
+//The second class
+
+public class AppThis {
+
+    public static void main(String[] args) {
+    
+    	SetThisM CreateFrog = new SetThisM();
+        
+        //CreateFrog.name = "Froggy";
+        //CreateFrog.age = 1;
+        
+    	CreateFrog.setName("Froggy");
+    	CreateFrog.setAge(1);
+        
+        System.out.println(CreateFrog.getName());
+    }
+
+}
